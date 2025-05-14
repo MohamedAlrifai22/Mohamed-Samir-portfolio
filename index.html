@@ -9,12 +9,16 @@
       href="./MOHAMED SAMIR-photoaidcom-cropped.png"
       type="image/x-icon"
     />
+
     <style>
-      body {
-        font-family: Arial, sans-serif;
+      * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
         line-height: 1.8;
       }
 
@@ -28,21 +32,22 @@
       nav {
         background-color: #f4f4f4;
         padding: 10px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
       nav a {
-        margin: 0 15px;
+        margin: 10px;
         text-decoration: none;
         color: #004080;
         font-weight: bold;
-        display: inline-block;
       }
 
       section {
         padding: 20px;
-        margin: 20px auto;
-        max-width: 800px;
+        margin: 0 auto;
+        max-width: 1200px;
       }
 
       h2 {
@@ -63,6 +68,8 @@
         width: 100%;
         border-collapse: collapse;
         margin: 20px 0;
+        overflow-x: auto;
+        display: block;
       }
 
       table,
@@ -82,66 +89,41 @@
         color: white;
       }
 
-      video {
-        max-width: 100%;
-        height: auto;
-      }
-
       ul {
         list-style-type: disc;
         padding-left: 20px;
       }
 
-      ul li {
-        margin-bottom: 10px;
+      video {
+        width: 100%;
+        height: auto;
       }
 
-      /* Responsive Design */
       @media (max-width: 768px) {
-        header {
-          padding: 15px;
+        nav {
+          flex-direction: column;
         }
 
-        nav a {
-          margin: 5px;
+        table {
           font-size: 14px;
-        }
-
-        table,
-        th,
-        td {
-          font-size: 12px;
-          padding: 5px;
-        }
-
-        ul {
-          padding-left: 15px;
         }
       }
 
       @media (max-width: 480px) {
-        nav a {
-          display: block;
-          margin: 5px 0;
-        }
-
         header h1 {
-          font-size: 22px;
+          font-size: 1.5rem;
         }
 
         header p {
-          font-size: 16px;
+          font-size: 1rem;
         }
 
-        table,
-        th,
-        td {
-          font-size: 10px;
-          padding: 3px;
+        nav a {
+          font-size: 0.9rem;
         }
 
-        ul li {
-          font-size: 14px;
+        table {
+          font-size: 12px;
         }
       }
     </style>
@@ -307,18 +289,20 @@
       </table>
     </section>
 
-    <section>
-      <section id="project-video">
-        <h2>Project Video</h2>
-        <video controls>
-          <source
-            src="./whatsapp-video-2025-02-23-at-121625-pm_xPlQrUrj.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <p>Watch the execution of one of my projects.</p>
-      </section>
+    <section id="project-video">
+      <h2>Project Video</h2>
+      <video controls>
+        <source
+          src="./whatsapp-video-2025-02-23-at-121625-pm_xPlQrUrj.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <p>Watch the execution of one of my projects.</p>
+      <p>
+        A project was implemented with a length of 1100 meters under the Nile
+        River, including bundle 10 pipeline railway signal cables, one set.
+      </p>
     </section>
 
     <section id="skills">
@@ -334,18 +318,38 @@
         <li>Primavera</li>
         <li>Photoshop</li>
         <li>Video Editing</li>
-        <li>Programming languages (HTML-CSS-JAVASCRIPT)</li>
+        <li>Programming languages (HTML, CSS, JavaScript)</li>
       </ul>
     </section>
 
     <section id="projects">
       <h2>Job Description</h2>
       <ul>
-        <li>Inspect sites, explore obstacles, and determine feasibility.</li>
-        <li>Prepare timelines, cost estimates, and pricing.</li>
-        <li>Conduct site surveys using total station devices.</li>
-        <li>Create HDD specifications and perform analysis.</li>
-        <!-- Additional responsibilities -->
+        <li>
+          First, inspect the site, explore obstacles and facilities, and
+          determine whether the site is suitable for work or not.
+        </li>
+        <li>
+          Prepare a project timeline, determine the project cost, and set an
+          appropriate price per meter for the specified timeframe.
+        </li>
+        <li>
+          Make survey for the site coordinates using the total station device.
+        </li>
+        <li>
+          Make HDD Specification - Plan & profile drawings - Preliminary method
+          statement - Pull force- stress calculations - Hydro-fracture analysis
+          .
+        </li>
+        <li>Steering with (Digi track or Para track 2).</li>
+        <li>
+          Planning the entry with the reamer and conducting the necessary tests
+          to determine the type of soil and reamers type used with it.
+        </li>
+        <li>
+          Site management and dealing with the Client, completing papers and
+          permits for site work.
+        </li>
       </ul>
     </section>
 
@@ -359,7 +363,9 @@
       <h2>Contact Me</h2>
       <p>
         Email:
-        <a href="mailto:MohamedSamirAlRifai@gmail.com">MohamedSamirAlRifai@gmail.com</a>
+        <a href="mailto:MohamedSamirAlRifai@gmail.com"
+          >MohamedSamirAlRifai@gmail.com</a
+        >
       </p>
       <p>Phone: +0201274470288</p>
       <p>Location: Port Said, Egypt</p>
