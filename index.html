@@ -10,15 +10,11 @@
       type="image/x-icon"
     />
     <style>
-      /* إعدادات عامة لتحسين التوافق */
-      * {
+      body {
+        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      }
-
-      body {
-        font-family: Arial, sans-serif;
         line-height: 1.8;
       }
 
@@ -40,16 +36,13 @@
         text-decoration: none;
         color: #004080;
         font-weight: bold;
-      }
-
-      nav a:hover {
-        text-decoration: underline;
+        display: inline-block;
       }
 
       section {
         padding: 20px;
         margin: 20px auto;
-        max-width: 90%; /* اجعل العرض مرنًا */
+        max-width: 800px;
       }
 
       h2 {
@@ -89,55 +82,66 @@
         color: white;
       }
 
-      img,
       video {
         max-width: 100%;
         height: auto;
       }
 
       ul {
-        list-style-type: square;
+        list-style-type: disc;
         padding-left: 20px;
       }
 
       ul li {
-        margin: 5px 0;
+        margin-bottom: 10px;
       }
 
-      /* لجعل التصميم متجاوبًا */
+      /* Responsive Design */
       @media (max-width: 768px) {
-        nav a {
-          display: block;
-          margin: 10px 0;
-        }
-
-        table {
-          display: block;
-          overflow-x: auto; /* تمرير أفقي للجداول */
-          white-space: nowrap;
-        }
-
-        th,
-        td {
-          padding: 5px;
-        }
-
-        section {
-          padding: 10px;
-        }
-      }
-
-      @media (max-width: 480px) {
         header {
           padding: 15px;
         }
 
-        h2 {
-          font-size: 1.5rem;
+        nav a {
+          margin: 5px;
+          font-size: 14px;
         }
 
+        table,
+        th,
+        td {
+          font-size: 12px;
+          padding: 5px;
+        }
+
+        ul {
+          padding-left: 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
         nav a {
-          font-size: 0.9rem;
+          display: block;
+          margin: 5px 0;
+        }
+
+        header h1 {
+          font-size: 22px;
+        }
+
+        header p {
+          font-size: 16px;
+        }
+
+        table,
+        th,
+        td {
+          font-size: 10px;
+          padding: 3px;
+        }
+
+        ul li {
+          font-size: 14px;
         }
       }
     </style>
@@ -182,21 +186,41 @@
           </tr>
         </thead>
         <tbody>
-          <!-- محتوى الجدول كما هو -->
+          <tr>
+            <td>Sharqia</td>
+            <td>2019</td>
+            <td>3</td>
+            <td>700</td>
+            <td>42 inches</td>
+            <td>400</td>
+            <td>GASCO</td>
+          </tr>
+          <tr>
+            <td>Damietta</td>
+            <td>2020</td>
+            <td>6</td>
+            <td>300</td>
+            <td>18 inches</td>
+            <td>60</td>
+            <td>Petrojet</td>
+          </tr>
+          <!-- Additional rows -->
         </tbody>
       </table>
     </section>
 
-    <section id="project-video">
-      <h2>Project Video</h2>
-      <video controls>
-        <source
-          src="./whatsapp-video-2025-02-23-at-121625-pm_xPlQrUrj.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-      <p>Watch the execution of one of my projects.</p>
+    <section>
+      <section id="project-video">
+        <h2>Project Video</h2>
+        <video controls>
+          <source
+            src="./whatsapp-video-2025-02-23-at-121625-pm_xPlQrUrj.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <p>Watch the execution of one of my projects.</p>
+      </section>
     </section>
 
     <section id="skills">
@@ -212,7 +236,18 @@
         <li>Primavera</li>
         <li>Photoshop</li>
         <li>Video Editing</li>
-        <li>Programming languages (HTML, CSS, JavaScript)</li>
+        <li>Programming languages (HTML-CSS-JAVASCRIPT)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Job Description</h2>
+      <ul>
+        <li>Inspect sites, explore obstacles, and determine feasibility.</li>
+        <li>Prepare timelines, cost estimates, and pricing.</li>
+        <li>Conduct site surveys using total station devices.</li>
+        <li>Create HDD specifications and perform analysis.</li>
+        <!-- Additional responsibilities -->
       </ul>
     </section>
 
@@ -226,9 +261,7 @@
       <h2>Contact Me</h2>
       <p>
         Email:
-        <a href="mailto:MohamedSamirAlRifai@gmail.com"
-          >MohamedSamirAlRifai@gmail.com</a
-        >
+        <a href="mailto:MohamedSamirAlRifai@gmail.com">MohamedSamirAlRifai@gmail.com</a>
       </p>
       <p>Phone: +0201274470288</p>
       <p>Location: Port Said, Egypt</p>
